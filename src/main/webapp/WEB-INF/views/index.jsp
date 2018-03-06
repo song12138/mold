@@ -45,12 +45,11 @@ $(function(){
                 <li class="now"><a href="${ctx}/page/index">首页</a></li>
                 <li><a href="${ctx}/page/about">关于我们</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
-                <li class="er"><a href="${ctx}/page/service">核心业务</a></li>
+                <li class="er"><a href="${ctx}/page/service">产品优势</a></li>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
                 <li><a href="${ctx}/page/customer">客户中心</a></li>
                 <li><a href="${ctx}/page/attrct">招商中心</a></li>
-                <li><a href="${ctx}/page/invite">加入我们</a></li>
-                <li><a href="">论坛社区</a></li>
+                <li><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
             <div class="er_m">
                 <div class="hx">
@@ -88,6 +87,26 @@ $(function(){
     </div>
 </div>
 <!--幻灯片-->
+
+<div class="space_hx">&nbsp;</div>
+
+<div class="scd clearfix" style="width: 50%">
+    <div class="scd_top">
+        <div class="s_nav">
+            <a href="" class="active"><span>公司简介</span></a>
+        </div>
+        <div class="pst">
+            当前位置：<a href="">首页</a>-<a href="">公司简介</a>
+        </div>
+    </div>
+    <div class="about">
+        <img src="${ctxStatic}/Assets/upload/pic8.jpg" width="410" height="180" alt=""/>
+        <br/>
+        <p style="clear:both; margin-top:20px;">中维建筑塑料模壳有限公司生产的中维牌塑料模壳，通过了国家建设及人防工程办公室检测认定 。</p>
+        <p>建筑塑料模壳建造的楼面合理，自重量轻，承受强度高，降低层高，款式新颖美观，节约建材效果显著，可节约钢材和混凝土20%～25%，降低总造价。特别适合大荷载建筑密肋楼板。如地下车库、超市、商场、车间。</p>
+        <p>中维建筑塑料模壳有限公司专业从事结构工程优化设计并致力于研究、开发和推广新型建筑材料，是一家专业研发、设计、制造、销售、售后服务为一体的建筑模壳公司。</p>
+    </div>
+</div>
 <div class="space_hx">&nbsp;</div>
 <div class="i_ma">
 	<div class="i_name">
@@ -159,36 +178,14 @@ $(function(){
         	<span>新闻中心</span>News Center
         </div>
         <ul>
-        	<li>
-            	<a href="">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>再获深房</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>再获深房</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>再获深房</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>再获深房</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
-            <li>
-            	<a href="">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>再获深房</p>
-                    <em>2015-10-25</em>
-                </a>
-            </li>
+            <c:forEach items="${page.list}" var="news">
+                <li>
+                    <a href="">
+                        <p>${news.title}</p>
+                        <em><fmt:formatDate value="${news.creatTime}" pattern="yyyy-MM-dd"/> </em>
+                    </a>
+                </li>
+            </c:forEach>
         </ul>
     </div>
     <div class="i_mbr">

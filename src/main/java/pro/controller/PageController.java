@@ -1,7 +1,16 @@
 package pro.controller;
 
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import pro.entity.News;
+import pro.service.NewsService;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  * 页面跳转
@@ -10,8 +19,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping(value = "/page")
 public class PageController {
+
+    @Autowired
+    private NewsService newsService;
+
     @RequestMapping(value = "index")
-    public String index() {
+    public String index(Model model, HttpServletRequest request, HttpServletResponse response) {
+        PageHelper.startPage(1, 5);
+        News news = new News();
+        PageInfo<News> pageInfo=new PageInfo<News>(newsService.findList(news));
+        model.addAttribute("page", pageInfo);
         return "index";
     }
 

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pro.dao.NewsDao">
+
+    <select id="get" resultType="News">
+        SELECT *
+        FROM tb_news
+        WHERE id=#{id}
+    </select>
+    
+    <!--<select id="findFront" resultType="News">-->
+        <!--SELECT -->
+    <!--</select>-->
+    
+    <select id="findList" resultType="News">
+        SELECT *
+        FROM tb_news
+        ORDER BY creatTime DESC
+    </select>
+</mapper>
