@@ -98,7 +98,7 @@ div{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-
 .i_mbc ul li img,.i_mbc ul li span{ display:inline-block; *display:inline; zoom:1; height:42px; line-height:42px; vertical-align:top; margin-top:17px;}
 .i_mbc ul li img{ margin-right:15px;}
 .i_mb .i_mbr{ width:260px; height:230px; float:right; border:1px solid #ddd; position:relative;}
-.tabBox_t , .tabBox  {width:100%;text-align:left;}
+.tabBox_t , .tabBox  {width:100%;text-align:center; margin-top: 10px;}
 .tabBox .tabNav { position:absolute; left:0; bottom:0; text-align:center; padding:10px 0; width:100%;}
 .tabBox .tabNav li { display:inline-block; *display:inline; zoom:1; height:21px; line-height:21px; border-right:1px solid #ddd; padding:0 20px; cursor:pointer; color:#333; font-weight:bold;}
 .tabBox .tabNav li.now { color:#F9A519;}
@@ -157,7 +157,7 @@ div{-webkit-transition: all .3s ease-in-out 0s;-moz-transition: all .3s ease-in-
 .scd_mr .box_m ul li{ width:100%; height:30px; line-height:30px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; background:url(../images/icon8.png) no-repeat left center;}
 .scd_mr .box_m ul li a{ font-size:14px; margin-left:13px;}
 .news{ width:100%;}
-.news .news_l{ width:540px; float:left;}
+.news .news_l{ width:540px; margin-left: auto;margin-right: auto;}
 .news .news_r{ width:540px; float:right;}
 .pages{ width:100%; text-align:center; margin-bottom:25px;}
 .pages a{ display:inline-block; *display:inline; zoom:1; width:65px; height:27px; border:1px solid #ddd; text-align:center; line-height:27px; font-size:14px; color:#666; margin:0 5px;}

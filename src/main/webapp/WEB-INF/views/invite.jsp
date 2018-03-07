@@ -17,7 +17,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href=""><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -27,9 +27,9 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">关于我们</a></li>
+                <li><a href="${ctx}/page/about">产品优势</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
-                <li class="er"><a href="${ctx}/page/service">产品优势</a></li>
+                <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
                 <li><a href="${ctx}/page/customer">客户中心</a></li>
                 <li><a href="${ctx}/page/attrct">招商中心</a></li>
@@ -43,12 +43,12 @@
                     <%--</div>--%>
                     <%--<div class="hx_m clearfix">--%>
                     	<%--<ul class="hx_ml">--%>
-                        	<%--<li><a href="">孵化器</a></li>--%>
-                            <%--<li><a href="">智造联盟</a></li>--%>
-                            <%--<li><a href="">创客公寓</a></li>--%>
-                            <%--<li><a href="">商业街</a></li>--%>
-                            <%--<li><a href="">商务办公</a></li>--%>
-                            <%--<li><a href="">电子商务</a></li>--%>
+                        	<%--<li><a href="##">孵化器</a></li>--%>
+                            <%--<li><a href="##">智造联盟</a></li>--%>
+                            <%--<li><a href="##">创客公寓</a></li>--%>
+                            <%--<li><a href="##">商业街</a></li>--%>
+                            <%--<li><a href="##">商务办公</a></li>--%>
+                            <%--<li><a href="##">电子商务</a></li>--%>
                         <%--</ul>--%>
                         <%--<div class="hx_mr"><img src="${ctxStatic}/Assets/upload/pic3.jpg" alt=""/></div>--%>
                     <%--</div>--%>
@@ -64,13 +64,11 @@
 <div class="scd clearfix">
 	<div class="scd_top">
     	<div class="s_nav">
-            <a href="" class="active"><span>联系我们</span></a>
-        </div>
-        <div class="pst">
-        	当前位置：<a href="">首页</a>-<a href="">联系我们</a>
+            <a href="##" class="active jianJie jianJie1"><span>联系我们</span></a>
+            <a href="##" class="jianJie jianJie2"><span>在线留言</span></a>
         </div>
     </div>
-    <div class="join clearfix">
+    <div class="join clearfix about1">
         <ul class="book">
             <li class="clearfix">
                 <p style="font-size: 22px">公司名称：</p>
@@ -86,35 +84,80 @@
             </li>
             </ul>
     </div>
+    <div class="join clearfix about2" style="display: none;">
+        <ul class="book">
+            <li class="clearfix">
+                <p>尊敬的客户，您的意见和建议是我们的宝贵财富，如果您有想对我们说的话，请在下方表格填写。</p>
+            </li>
+            <li class="clearfix">
+                <span class="title">所在城市：</span>
+                <div class="li_r">
+                    <input name="" type="text">
+                </div>
+            </li>
+            <li class="clearfix">
+                <span class="title">您的姓名：</span>
+                <div class="li_r">
+                    <input name="" type="text">
+                </div>
+            </li>
+            <li class="clearfix">
+                <span class="title">您的电话：</span>
+                <div class="li_r">
+                    <input name="" type="text">
+                    <p>为方便我们给您回复，请正确填写您的电话。例如:020-286***0或者手机号</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <span class="title">电子邮箱：</span>
+                <div class="li_r">
+                    <input name="" type="text" class="chang">
+                    <p>为方便我们给您回复，请正确填写您的邮箱地址。例如：12@163.com</p>
+                </div>
+            </li>
+            <li class="clearfix">
+                <span class="title">您的需求;</span>
+                <div class="li_r">
+                    <textarea name="" cols="" rows="7" class="chang"></textarea>
+                </div>
+            </li>
+            <li class="clearfix">
+                <span class="title">&nbsp;</span>
+                <div class="li_r">
+                    <input name="" type="submit" value="提交">
+                </div>
+            </li>
+        </ul>
+    </div>
 </div>
 <div class="fn_bg">
 	<ul class="f_nav clearfix">
     	<li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_1.png" alt=""/>
                 <span>联系我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_2.png" alt=""/>
                 <span>社区论坛</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_3.png" alt=""/>
                 <span>在线客服</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_4.png" alt=""/>
                 <span>关注我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_5.png" alt=""/>
                 <span>一键分享</span>
             </a>
@@ -123,4 +166,23 @@
 </div>
 <div class="bq">Copyright © 1998 - 2015   公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
 </body>
+<script type="text/javascript">
+    $(function () {
+        $('.jianJie1').click(function () {
+            $('.jianJie').removeClass('active')
+            $('.jianJie1').addClass('active')
+            $('.join').hide();
+            $('.about1').show();
+        });
+
+        $('.jianJie2').click(function () {
+            $('.jianJie').removeClass('active')
+            $('.jianJie2').addClass('active')
+            $('.join').hide();
+            $('.about2').show();
+        });
+    });
+
+
+</script>
 </html>

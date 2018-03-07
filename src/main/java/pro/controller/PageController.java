@@ -58,12 +58,18 @@ public class PageController {
     }
 
     @RequestMapping(value = "news")
-    public String news() {
+    public String news(PageInfo pageInfo,Model model, HttpServletRequest request, HttpServletResponse response) {
+        PageHelper.startPage(pageInfo.getPageNum(), 5);
+        News news = new News();
+        PageInfo<News> page=new PageInfo<News>(newsService.findList(news));
+        model.addAttribute("page", page);
         return "news";
     }
 
     @RequestMapping(value = "news2")
-    public String news2() {
+    public String news2(News news,Model model, HttpServletRequest request, HttpServletResponse response) {
+        newsService.update(news);
+        model.addAttribute("news", newsService.get(news));
         return "news_d";
     }
 

@@ -13,4 +13,6 @@ public interface NewsDao {
     News get(News news);
 
     List<News> findList(News news);
+
+    int update(News news);
 }

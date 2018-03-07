@@ -17,7 +17,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href=""><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -27,9 +27,9 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">关于我们</a></li>
+                <li><a href="${ctx}/page/about">产品优势</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
-                <li class="er now"><a href="${ctx}/page/service">产品优势</a></li>
+                <%--<li class="er now"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
                 <li><a href="${ctx}/page/customer">客户中心</a></li>
                 <li><a href="${ctx}/page/attrct">招商中心</a></li>
@@ -43,12 +43,12 @@
                     </div>
                     <div class="hx_m clearfix">
                     	<ul class="hx_ml">
-                        	<li><a href="">孵化器</a></li>
-                            <li><a href="">智造联盟</a></li>
-                            <li><a href="">创客公寓</a></li>
-                            <li><a href="">商业街</a></li>
-                            <li><a href="">商务办公</a></li>
-                            <li><a href="">电子商务</a></li>
+                        	<li><a href="##">孵化器</a></li>
+                            <li><a href="##">智造联盟</a></li>
+                            <li><a href="##">创客公寓</a></li>
+                            <li><a href="##">商业街</a></li>
+                            <li><a href="##">商务办公</a></li>
+                            <li><a href="##">电子商务</a></li>
                         </ul>
                         <div class="hx_mr"><img src="${ctxStatic}/Assets/upload/pic3.jpg" alt=""/></div>
                     </div>
@@ -65,7 +65,7 @@
 	<div class="scd_top">
     	<span>商业街</span>
         <div class="pst">
-        	当前位置：<a href="">首页</a>-<a href="">关于我们</a>
+        	当前位置：<a href="##">首页</a>-<a href="##">关于我们</a>
         </div>
     </div>
     <div class="join clearfix">
@@ -79,18 +79,18 @@
                 </div>
             </dt>
             <dd>
-            	<a href=""><span>项目展示</span></a>
-                <a href=""><span>合作商家</span></a>
-                <a href=""><span>客户服务</span></a>
+            	<a href="##"><span>项目展示</span></a>
+                <a href="##"><span>合作商家</span></a>
+                <a href="##"><span>客户服务</span></a>
             </dd>
         </dl>
         <div class="space_hx">&nbsp;</div>
         <div class="join_c clearfix">
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/icon9.png" alt=""/>
                 <span>商家服务</span>
             </a>
-            <a href="">
+            <a href="##">
             	<img src="${ctxStatic}/Assets/images/icon10.png" alt=""/>
                 <span>买家服务</span>
             </a>
@@ -100,31 +100,31 @@
 <div class="fn_bg">
 	<ul class="f_nav clearfix">
     	<li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_1.png" alt=""/>
                 <span>联系我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_2.png" alt=""/>
                 <span>社区论坛</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_3.png" alt=""/>
                 <span>在线客服</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_4.png" alt=""/>
                 <span>关注我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_5.png" alt=""/>
                 <span>一键分享</span>
             </a>

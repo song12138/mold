@@ -2,6 +2,7 @@ package pro.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import pro.dao.NewsDao;
 import pro.entity.News;
 
@@ -21,6 +22,12 @@ public class NewsService {
 
     public List<News> findList(News news) {
         return newsDao.findList(news);
+    }
+
+
+    public int update(News news){
+        news=this.get(news);
+        return newsDao.update(news);
     }
 
 }

@@ -17,7 +17,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href=""><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -27,33 +27,14 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">关于我们</a></li>
+                <li><a href="${ctx}/page/about">产品优势</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
-                <li class="er"><a href="${ctx}/page/service">产品优势</a></li>
+                <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li class="now"><a href="${ctx}/page/join">合作伙伴</a></li>
                 <li><a href="${ctx}/page/customer">客户中心</a></li>
                 <li><a href="${ctx}/page/attrct">招商中心</a></li>
                 <li><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
-            <div class="er_m">
-                <div class="hx">
-                	<i>&nbsp;</i>
-                	<div class="b_head">
-                    	核心业务<em>Core business</em>
-                    </div>
-                    <div class="hx_m clearfix">
-                    	<ul class="hx_ml">
-                        	<li><a href="">孵化器</a></li>
-                            <li><a href="">智造联盟</a></li>
-                            <li><a href="">创客公寓</a></li>
-                            <li><a href="">商业街</a></li>
-                            <li><a href="">商务办公</a></li>
-                            <li><a href="">电子商务</a></li>
-                        </ul>
-                        <div class="hx_mr"><img src="${ctxStatic}/Assets/upload/pic3.jpg" alt=""/></div>
-                    </div>
-                </div>
-            </div>
         </div>
         </div>
     </div>
@@ -64,80 +45,66 @@
 <div class="scd clearfix">
 	<div class="scd_top">
     	<div class="s_nav">
-        	<a href="" class="active"><span>政府机构</span></a>
-            <a href=""><span>研究机构</span></a>
-            <a href=""><span>合作企业</span></a>
-            <a href=""><span>金融机构</span></a>
-            <a href=""><span>合作大学</span></a>
-        </div>
-        <div class="pst">
-        	当前位置：<a href="">首页</a>-<a href="">关于我们</a>
+        	<a href="##" class="active"><span>合作伙伴</span></a>
+            <%--<a href="##"><span>研究机构</span></a>--%>
+            <%--<a href="##"><span>合作企业</span></a>--%>
+            <%--<a href="##"><span>金融机构</span></a>--%>
+            <%--<a href="##"><span>合作大学</span></a>--%>
         </div>
     </div>
     <div class="join clearfix">
-    	<dl class="join_a clearfix">
-        	<dt>
-            	<div class="title">酒店投资——与国际顶级四季酒店、法国雅高战略合作</div>
-                <div class="des">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>定位及建设目标：包括区域城市现状及趋势分析、服务中心改造定位、服务中心建设目标</p>
-                    <p>服务中心运营体系：包括服务中心平台架构、服务中心品牌体系两个方面</p>
-                    <p>服务中心服务平台：包括基础硬件升级改造、服务平台落地、项目工作推进规划</p>
-                </div>
-            </dt>
-            <dd>
-            	<a href=""><span>项目展示</span></a>
-                <a href=""><span>合作商家</span></a>
-                <a href=""><span>客户服务</span></a>
-            </dd>
-        </dl>
+    	<%--<dl class="join_a clearfix">--%>
+        	<%--<dt>--%>
+            	<%--<div class="title">酒店投资——与国际顶级四季酒店、法国雅高战略合作</div>--%>
+                <%--<div class="des">--%>
+                	<%--<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>定位及建设目标：包括区域城市现状及趋势分析、服务中心改造定位、服务中心建设目标</p>--%>
+                    <%--<p>服务中心运营体系：包括服务中心平台架构、服务中心品牌体系两个方面</p>--%>
+                    <%--<p>服务中心服务平台：包括基础硬件升级改造、服务平台落地、项目工作推进规划</p>--%>
+                <%--</div>--%>
+            <%--</dt>--%>
+            <%--<dd>--%>
+            	<%--<a href="##"><span>项目展示</span></a>--%>
+                <%--<a href="##"><span>合作商家</span></a>--%>
+                <%--<a href="##"><span>客户服务</span></a>--%>
+            <%--</dd>--%>
+        <%--</dl>--%>
         <div class="space_hx">&nbsp;</div>
         <ul class="join_b clearfix">
-        	<li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
-            <li><a href=""><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
+        	<li><a href="##"><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
+            <li><a href="##"><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
+            <li><a href="##"><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
+            <li><a href="##"><img src="${ctxStatic}/Assets/upload/pic9.jpg" alt=""/></a></li>
         </ul>
     </div>
 </div>
 <div class="fn_bg">
 	<ul class="f_nav clearfix">
     	<li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_1.png" alt=""/>
                 <span>联系我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_2.png" alt=""/>
                 <span>社区论坛</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_3.png" alt=""/>
                 <span>在线客服</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_4.png" alt=""/>
                 <span>关注我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_5.png" alt=""/>
                 <span>一键分享</span>
             </a>

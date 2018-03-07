@@ -17,4 +17,10 @@
         FROM tb_news
         ORDER BY creatTime DESC
     </select>
+
+    <update id="update">
+        UPDATE tb_news
+        SET readTime =#{readTime}+1
+        WHERE id=#{id}
+    </update>
 </mapper>

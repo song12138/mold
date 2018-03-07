@@ -17,7 +17,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href=""><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -27,33 +27,14 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">关于我们</a></li>
+                <li><a href="${ctx}/page/about">产品优势</a></li>
                 <li class="now"><a href="${ctx}/page/news">新闻中心</a></li>
-                <li class="er"><a href="${ctx}/page/service">产品优势</a></li>
+                <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
                 <li><a href="${ctx}/page/customer">客户中心</a></li>
                 <li><a href="${ctx}/page/attrct">招商中心</a></li>
                 <li><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
-            <div class="er_m">
-                <div class="hx">
-                	<i>&nbsp;</i>
-                	<div class="b_head">
-                    	核心业务<em>Core business</em>
-                    </div>
-                    <div class="hx_m clearfix">
-                    	<ul class="hx_ml">
-                        	<li><a href="">孵化器</a></li>
-                            <li><a href="">智造联盟</a></li>
-                            <li><a href="">创客公寓</a></li>
-                            <li><a href="">商业街</a></li>
-                            <li><a href="">商务办公</a></li>
-                            <li><a href="">电子商务</a></li>
-                        </ul>
-                        <div class="hx_mr"><img src="${ctxStatic}/Assets/upload/pic3.jpg" alt=""/></div>
-                    </div>
-                </div>
-            </div>
         </div>
         </div>
     </div>
@@ -62,128 +43,62 @@
 <div class="space_hx">&nbsp;</div>
 <div class="scd clearfix">
     <div class="news clearfix">
-    	<div class="news_l">
-        	<div class="scd_top">
-                <span>头条新闻</span>
-                <div class="pst">
-                    当前位置：<a href="">首页</a>-<a href="">新闻中心</a>
-                </div>
-            </div>
-            <div class="new_m">
-            	<div class="box mainPhoto"> <span class="goleft nextPage"><a href="javascript:void(0)"><img src="${ctxStatic}/Assets/images/prev.png"/></a></span>
-                  <div class="go slidegrid">
-                    <ul class="slideitems">
-                      <li>
-                      	<div class="tu"><a href="news_d.jsp"><img src="${ctxStatic}/Assets/upload/pic7.jpg" alt=""/></a></div>
-                        <div class="n_m">
-                            <div class="title">
-                                <span>2015-1-11</span>
-                                <p class="name"><a href="news_d.jsp">头条新闻长安乌沙大酒店开始啦</a></p>
-                            </div>
-                            <div class="des">
-                                头条新闻长安乌沙大酒店开始啦九月的深圳秋高氣爽陽光和煦中國公益慈善項目始啦九月的深圳秋深圳會展中心順利舉辦条新闻长安店开始...
-                            </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  <span class="goright prevPage"><a href="javascript:void(0)"><img src="${ctxStatic}/Assets/images/next.png" /></a></span> </div>
-                <script>
-                $(function(){
-                $('.mainPhoto .slidegrid').scrollable({size:1,circular:true,next:'.nextPage',prev:'.prevPage'}).autoscroll();
-                });	
-                </script> 
-            	<div class="n_m">
-                    <div class="title">
-                        <span>2015-1-11</span>
-                        <p class="name"><a href="news_d.jsp">头条新闻长安乌沙大酒店开始啦</a></p>
-                    </div>
-                    <div class="des">
-                        头条新闻长安乌沙大酒店开始啦九月的深圳秋高氣爽陽光和煦中國公益慈善項目始啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒店开始...
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="news_r">
+        <div class="news_l">
         	<div class="scd_top">
                 <span>全部新闻</span>
             </div>
             <div class="new_m">
-        	<div class="n_m">
-                <div class="title">
-                    <span>2015-1-11</span>
-                    <p class="name"><a href="news_d.jsp">头条新闻长安乌沙大酒店开始啦</a></p>
-                </div>
-                <div class="des">
-                    头条新闻长安乌沙大酒店开始啦九月的深圳秋高氣爽陽光和煦中國公益慈善項目始啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒店开始...
-                </div>
-            </div>
-            <div class="n_m">
-                <div class="title">
-                    <span>2015-1-11</span>
-                    <p class="name"><a href="news_d.jsp">头条新闻长安乌沙大酒店开始啦</a></p>
-                </div>
-                <div class="des">
-                    头条新闻长安乌沙大酒店开始啦九月的深圳秋高氣爽陽光和煦中國公益慈善項目始啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒店开始...
-                </div>
-            </div>
-            <div class="n_m">
-                <div class="title">
-                    <span>2015-1-11</span>
-                    <p class="name"><a href="news_d.jsp">头条新闻长安乌沙大酒店开始啦</a></p>
-                </div>
-                <div class="des">
-                    头条新闻长安乌沙大酒店开始啦九月的深圳秋高氣爽陽光和煦中國公益慈善項目始啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒店开始...
-                </div>
-            </div>
-            <div class="n_m">
-                <div class="title">
-                    <span>2015-1-11</span>
-                    <p class="name"><a href="news_d.jsp">头条新闻长安乌沙大酒店开始啦</a></p>
-                </div>
-                <div class="des">
-                    头条新闻长安乌沙大酒店开始啦九月的深圳秋高氣爽陽光和煦中國公益慈善項目始啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒啦九月的深圳秋深圳會展中心順利舉辦条新闻长安乌沙大酒店开始...
-                </div>
-           </div>
+                <c:forEach items="${page.list}" var="news">
+                    <div class="n_m">
+                        <div class="title">
+                            <span><fmt:formatDate value="${news.creatTime}" pattern="yyyy-MM-dd"/> </span>
+                            <p class="name"><a href="${ctx}/page/news2?id=${news.id}">${news.title}</a></p>
+                        </div>
+                        <div class="des newsContent">
+                            ${news.content}
+                        </div>
+                    </div>
+                </c:forEach>
         </div>
         </div>
     </div>
     <div class="space_hx">&nbsp;</div>
+    <input type="hidden" value="${page}">
     <div class="pages">
-    	<a href="">首页</a>
-        <a href="">上一页</a>
-        <a href="">下一页</a>
-        <a href="">尾页</a>
+    	<a href="##" class="newsFirst">首页</a>
+        <a href="##" class="newsPre">上一页</a>
+        <a href="##" class="newsNext">下一页</a>
+        <a href="##" class="newsEnd">尾页</a>
     </div>
 </div>
 <div class="fn_bg">
 	<ul class="f_nav clearfix">
     	<li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_1.png" alt=""/>
                 <span>联系我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_2.png" alt=""/>
                 <span>社区论坛</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_3.png" alt=""/>
                 <span>在线客服</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_4.png" alt=""/>
                 <span>关注我们</span>
             </a>
         </li>
         <li>
-        	<a href="">
+        	<a href="##">
             	<img src="${ctxStatic}/Assets/images/f_5.png" alt=""/>
                 <span>一键分享</span>
             </a>
@@ -192,4 +107,48 @@
 </div>
 <div class="bq">Copyright © 1998 - 2015   公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
 </body>
+<script type="text/javascript">
+    $(function () {
+        //内容省略。。。
+        $(".newsContent").each(function(){
+            var newsContent = $(this).text();
+            if(newsContent.length>151){
+                newsContent=newsContent.substring(0,150)+"...";
+            }
+            $(this).html(newsContent);
+        });
+
+//        <a href="##" class="newsFirst">首页</a>
+//            <a href="##" class="newsPre">上一页</a>
+//            <a href="##" class="newsNext">下一页</a>
+//            <a href="##" class="newsEnd">尾页</a>
+
+        $('.newsfirst').click(function () {
+            if (!${page.isFirstPage}){
+                window.location.href='${ctx}/page/news?pageNum=0';
+            }
+        })
+
+        $('.newspre').click(function () {
+            if (${page.hasPreviousPage}){
+                var pageNum=${page.pageNum}-1;
+                window.location.href = '${ctx}/page/news?pageNum=' + pageNum;
+            }
+        });
+
+        $('.newsnext').click(function () {
+            if (${page.hasNextPage}){
+                var pageNum=${page.pageNum}+1;
+                window.location.href = '${ctx}/page/news?pageNum=' + pageNum;
+            }
+        });
+        $('.newsEnd').click(function () {
+            if(!${page.isLastPage}){
+                var pageNum=${page.lastPage};
+                window.location.href = '${ctx}/page/news?pageNum=' + pageNum;
+            }
+        })
+
+    });
+</script>
 </html>
