@@ -6,7 +6,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+import pro.entity.Message;
 import pro.entity.News;
+import pro.service.MessageService;
 import pro.service.NewsService;
 
 import javax.servlet.http.HttpServletRequest;
@@ -23,11 +26,14 @@ public class PageController {
     @Autowired
     private NewsService newsService;
 
+    @Autowired
+    private MessageService messageService;
+
     @RequestMapping(value = "index")
     public String index(Model model, HttpServletRequest request, HttpServletResponse response) {
         PageHelper.startPage(1, 5);
         News news = new News();
-        PageInfo<News> pageInfo=new PageInfo<News>(newsService.findList(news));
+        PageInfo<News> pageInfo = new PageInfo<News>(newsService.findList(news));
         model.addAttribute("page", pageInfo);
         return "index";
     }
@@ -58,16 +64,16 @@ public class PageController {
     }
 
     @RequestMapping(value = "news")
-    public String news(PageInfo pageInfo,Model model, HttpServletRequest request, HttpServletResponse response) {
+    public String news(PageInfo pageInfo, Model model, HttpServletRequest request, HttpServletResponse response) {
         PageHelper.startPage(pageInfo.getPageNum(), 5);
         News news = new News();
-        PageInfo<News> page=new PageInfo<News>(newsService.findList(news));
+        PageInfo<News> page = new PageInfo<News>(newsService.findList(news));
         model.addAttribute("page", page);
         return "news";
     }
 
     @RequestMapping(value = "news2")
-    public String news2(News news,Model model, HttpServletRequest request, HttpServletResponse response) {
+    public String news2(News news, Model model, HttpServletRequest request, HttpServletResponse response) {
         newsService.update(news);
         model.addAttribute("news", newsService.get(news));
         return "news_d";
@@ -83,5 +89,11 @@ public class PageController {
         return "service_a";
     }
 
+
+    @RequestMapping(value = "addMessage")
+    @ResponseBody
+    public Boolean addMessage(Message message,  HttpServletRequest request, HttpServletResponse response) {
+        return messageService.insert(message);
+    }
 
 }

@@ -5,14 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
 <title>公司名称</title>
+    <!--引用百度地图API-->
+    <style type="text/css">
+        html,body{margin:0;padding:0;}
+        .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+        .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 <link rel="stylesheet" type="text/css" href="${ctxStatic}/Assets/css/reset.css"/>
 <script type="text/javascript" src="${ctxStatic}/Assets/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="${ctxStatic}/Assets/js/js_z.js"></script>
 <link rel="stylesheet" type="text/css" href="${ctxStatic}/Assets/css/thems.css">
 <link rel="stylesheet" type="text/css" href="${ctxStatic}/Assets/css/responsive.css">
 </head>
-
 <body>
 <!--头部-->
 <div class="header">
@@ -27,12 +35,12 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">产品优势</a></li>
+                <li><a href="${ctx}/page/about">产品中心</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
                 <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
-                <li><a href="${ctx}/page/customer">客户中心</a></li>
-                <li><a href="${ctx}/page/attrct">招商中心</a></li>
+                <%--<li><a href="${ctx}/page/customer">客户中心</a></li>--%>
+                <%--<li><a href="${ctx}/page/attrct">招商中心</a></li>--%>
                 <li class="now"><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
             <%--<div class="er_m">--%>
@@ -82,9 +90,14 @@
                 <p style="font-size: 22px">工厂位置：</p>
                 <p style="font-size: 22px">XXXXXXXXX</p>
             </li>
+            <li>
+                <!--百度地图容器-->
+                <div style="width:697px;height:550px;border:#ccc solid 1px;" id="dituContent"></div>
+            </li>
             </ul>
     </div>
     <div class="join clearfix about2" style="display: none;">
+        <form action="" id="addMessageForm">
         <ul class="book">
             <li class="clearfix">
                 <p>尊敬的客户，您的意见和建议是我们的宝贵财富，如果您有想对我们说的话，请在下方表格填写。</p>
@@ -92,42 +105,43 @@
             <li class="clearfix">
                 <span class="title">所在城市：</span>
                 <div class="li_r">
-                    <input name="" type="text">
+                    <input name="city" id="city" type="text">
                 </div>
             </li>
             <li class="clearfix">
                 <span class="title">您的姓名：</span>
                 <div class="li_r">
-                    <input name="" type="text">
+                    <input name="name" id="name" type="text">
                 </div>
             </li>
             <li class="clearfix">
                 <span class="title">您的电话：</span>
                 <div class="li_r">
-                    <input name="" type="text">
+                    <input name="telphone" id="telphone" type="text">
                     <p>为方便我们给您回复，请正确填写您的电话。例如:020-286***0或者手机号</p>
                 </div>
             </li>
             <li class="clearfix">
                 <span class="title">电子邮箱：</span>
                 <div class="li_r">
-                    <input name="" type="text" class="chang">
+                    <input name="email" id="email" type="text" class="chang">
                     <p>为方便我们给您回复，请正确填写您的邮箱地址。例如：12@163.com</p>
                 </div>
             </li>
             <li class="clearfix">
                 <span class="title">您的需求;</span>
                 <div class="li_r">
-                    <textarea name="" cols="" rows="7" class="chang"></textarea>
+                    <textarea name="demand" id="demand" cols="" rows="7" class="chang"></textarea>
                 </div>
             </li>
             <li class="clearfix">
                 <span class="title">&nbsp;</span>
                 <div class="li_r">
-                    <input name="" type="submit" value="提交">
+                    <input name="" type="submit" id="addMessage" value="提交">
                 </div>
             </li>
         </ul>
+        </form>
     </div>
 </div>
 <div class="fn_bg">
@@ -181,8 +195,82 @@
             $('.join').hide();
             $('.about2').show();
         });
+
+        $('#addMessage').click(function () {
+            var city = $('#city').val();
+            var name = $('#name').val();
+            var telphone = $('#telphone').val();
+            var email = $('#email').val();
+            var demand = $('#demand').val();
+            if (checkNull(city) && checkNull(name) && checkNull(telphone) && checkNull(email) && checkNull(demand)){
+                alert('留言失败');
+                return false;
+            }
+            $.ajax({
+                type:'post',
+                url:'${ctx}/page/addMessage',
+                dataType:'json',
+                data:$('#addMessageForm').serialize(),
+                success:function (data) {
+                    console.log(data);
+                    if (data) {
+                        alert('留言成功')
+                    }else{
+                        alert('留言失败')
+                    }
+                }
+            })
+        });
     });
 
+    function checkNull(value) {
+        if (value != null && value != '') {
+            return false;
+        }else {
+            return true;
+        }
+    }
 
+</script>
+
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+    }
+
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(114.311582,30.598467);//定义一个中心点坐标
+        map.centerAndZoom(point,12);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+        var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+        map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+        var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+        map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+        var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+        map.addControl(ctrl_sca);
+    }
+
+
+    initMap();//创建和初始化地图
 </script>
 </html>

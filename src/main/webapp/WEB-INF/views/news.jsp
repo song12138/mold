@@ -27,12 +27,12 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">产品优势</a></li>
+                <li><a href="${ctx}/page/about">产品中心</a></li>
                 <li class="now"><a href="${ctx}/page/news">新闻中心</a></li>
                 <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
-                <li><a href="${ctx}/page/customer">客户中心</a></li>
-                <li><a href="${ctx}/page/attrct">招商中心</a></li>
+                <%--<li><a href="${ctx}/page/customer">客户中心</a></li>--%>
+                <%--<li><a href="${ctx}/page/attrct">招商中心</a></li>--%>
                 <li><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
         </div>

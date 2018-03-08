@@ -27,33 +27,14 @@
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">产品优势</a></li>
+                <li><a href="${ctx}/page/about">产品中心</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
                 <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
-                <li><a href="${ctx}/page/customer">客户中心</a></li>
-                <li class="now"><a href="${ctx}/page/attrct">招商中心</a></li>
+                <%--<li><a href="${ctx}/page/customer">客户中心</a></li>--%>
+                <%--<li class="now"><a href="${ctx}/page/attrct">招商中心</a></li>--%>
                 <li><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
-            <div class="er_m">
-                <div class="hx">
-                	<i>&nbsp;</i>
-                	<div class="b_head">
-                    	核心业务<em>Core business</em>
-                    </div>
-                    <div class="hx_m clearfix">
-                    	<ul class="hx_ml">
-                        	<li><a href="##">孵化器</a></li>
-                            <li><a href="##">智造联盟</a></li>
-                            <li><a href="##">创客公寓</a></li>
-                            <li><a href="##">商业街</a></li>
-                            <li><a href="##">商务办公</a></li>
-                            <li><a href="##">电子商务</a></li>
-                        </ul>
-                        <div class="hx_mr"><img src="${ctxStatic}/Assets/upload/pic3.jpg" alt=""/></div>
-                    </div>
-                </div>
-            </div>
         </div>
         </div>
     </div>
@@ -69,9 +50,6 @@
             <a href="##" class="active"><span>社会招聘</span></a>
             <a href="##"><span>校园招聘</span></a>
             <a href="##"><span>人才俱乐部</span></a>
-        </div>
-        <div class="pst">
-        	当前位置：<a href="##">首页</a>-<a href="##">加入我们</a>
         </div>
     </div>
     <div class="join clearfix">

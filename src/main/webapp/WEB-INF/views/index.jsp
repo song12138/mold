@@ -12,7 +12,7 @@
 <script type="text/javascript" src="${ctxStatic}/Assets/js/banner.js"></script>
 <link rel="stylesheet" type="text/css" href="${ctxStatic}/Assets/css/thems.css">
 <link rel="stylesheet" type="text/css" href="${ctxStatic}/Assets/css/responsive.css">
-<script language="javascript">
+<script lang    uage="javascript">
 $(function(){
 	$('#owl-demo').owlCarousel({
 		items: 1,
@@ -43,12 +43,12 @@ $(function(){
             <div class="n_icon">导航栏</div>
             <ul class="nav clearfix">
                 <li class="now"><a href="${ctx}/page/index">首页</a></li>
-                <li><a href="${ctx}/page/about">产品优势</a></li>
+                <li><a href="${ctx}/page/about">产品中心</a></li>
                 <li><a href="${ctx}/page/news">新闻中心</a></li>
                 <%--<li class="er"><a href="${ctx}/page/service">产品优势</a></li>--%>
                 <li><a href="${ctx}/page/join">合作伙伴</a></li>
-                <li><a href="${ctx}/page/customer">客户中心</a></li>
-                <li><a href="${ctx}/page/attrct">招商中心</a></li>
+                <%--<li><a href="${ctx}/page/customer">客户中心</a></li>--%>
+                <%--<li><a href="${ctx}/page/attrct">招商中心</a></li>--%>
                 <li><a href="${ctx}/page/invite">联系我们</a></li>
             </ul>
         </div>
@@ -59,11 +59,11 @@ $(function(){
 <!--幻灯片-->
 <div id="banner" class="banner"> 
     <div id="owl-demo" class="owl-carousel"> 
-        <a class="item" target="_blank" href="##" style="background-image:url(${ctxStatic}/Assets/upload/banner.jpg)">
-            <img src="${ctxStatic}/Assets/upload/banner.jpg" alt="">
+        <a class="item" target="_blank" href="##" >
+            <img src="${ctxStatic}/Assets/mold/banner2.jpg" height="500px" alt="">
         </a>
-        <a class="item" target="_blank" href="##" style="background-image:url(${ctxStatic}/Assets/upload/banner.jpg)">
-            <img src="${ctxStatic}/Assets/upload/banner_a.jpg" alt="">
+        <a class="item" target="_blank" href="##" >
+            <img src="${ctxStatic}/Assets/mold/banner3.jpg" height="500px" alt="">
         </a>
     </div>
 </div>
@@ -80,7 +80,7 @@ $(function(){
         </div>
     </div>
     <div class="about1 about ">
-        <img src="${ctxStatic}/Assets/upload/pic8.jpg" width="410" height="180" alt=""/>
+        <%--<img src="${ctxStatic}/Assets/upload/pic8.jpg" width="410" height="180" alt=""/>--%>
         <br/>
         <p style="clear:both; margin-top:20px;">中维建筑塑料模壳有限公司生产的中维牌塑料模壳，通过了国家建设及人防工程办公室检测认定 。</p>
         <p>建筑塑料模壳建造的楼面合理，自重量轻，承受强度高，降低层高，款式新颖美观，节约建材效果显著，可节约钢材和混凝土20%～25%，降低总造价。特别适合大荷载建筑密肋楼板。如地下车库、超市、商场、车间。</p>
@@ -134,7 +134,7 @@ $(function(){
         <ul>
             <c:forEach items="${page.list}" var="news">
                 <li>
-                    <a href="##">
+                    <a href="${ctx}/page/news2?id=${news.id}">
                         <p>${news.title}</p>
                         <em><fmt:formatDate value="${news.creatTime}" pattern="yyyy-MM-dd"/> </em>
                     </a>
