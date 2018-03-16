@@ -530,6 +530,30 @@
         </plugins>
     </build>
 
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <runtime.env>src/main/resources/env/dev</runtime.env>
+            </properties>
+        </profile>
+        <profile>
+            <id>dtest</id>
+            <properties>
+                <runtime.env>src/main/resources/env/test</runtime.env>
+            </properties>
+        </profile>
+        <profile>
+            <id>pro</id>
+            <properties>
+                <runtime.env>src/main/resources/env/pro</runtime.env>
+            </properties>
+        </profile>
+    </profiles>
+
 
 
 

@@ -17,16 +17,4 @@
 		<setting name="cacheEnabled" value="true" />
 	</settings>
 
-	<!--&lt;!&ndash; 类型别名 &ndash;&gt;-->
-	<!--<typeAliases>-->
-		<!--<typeAlias alias="Page" type="common.annotation.Page" />&lt;!&ndash;分页  &ndash;&gt;-->
-	<!--</typeAliases>-->
-
-	<!--&lt;!&ndash; 插件配置 &ndash;&gt;-->
-	<!--<plugins>-->
-		<!--<plugin interceptor="com.winchampion.credit.pure.common.persistence.interceptor.PaginationInterceptor" />-->
-	<!--</plugins>-->
-
-
-
 </configuration>

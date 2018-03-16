@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
 <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
 <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
-<title>公司名称</title>
+<title>中良塑料模壳有限公司</title>
     <!--引用百度地图API-->
     <style type="text/css">
         html,body{margin:0;padding:0;}
@@ -25,7 +25,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="中良塑料模壳有限公司"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -79,7 +79,7 @@
     <div class="join clearfix about1">
         <ul class="book">
             <li class="clearfix">
-                <p style="font-size: 22px">公司名称：</p>
+                <p style="font-size: 22px">中良塑料模壳有限公司：</p>
                     <p style="font-size: 22px">XXXXXXXXX</p>
             </li>
             <li class="clearfix">
@@ -178,7 +178,7 @@
         </li>
     </ul>
 </div>
-<div class="bq">Copyright © 1998 - 2015   公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+<div class="bq">Copyright © 1998 - 2015   中良塑料模壳有限公司服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
 </body>
 <script type="text/javascript">
     $(function () {

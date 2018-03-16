@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
-<title>公司名称</title>
+<title>中良塑料模壳有限公司</title>
 <link rel="stylesheet" type="text/css" href="${ctxStatic}/Assets/css/reset.css"/>
 <script type="text/javascript" src="${ctxStatic}/Assets/js/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="${ctxStatic}/Assets/js/js_z.js"></script>
@@ -17,7 +17,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="公司名称"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="中良塑料模壳有限公司"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -54,7 +54,7 @@
         	<dt>
             	<div class="title">酒店投资——与国际顶级四季酒店、法国雅高战略合作</div>
                 <div class="des">
-                	<p>公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>定位及建设目标：包括区域城市现状及趋势分析、服务中心改造定位、服务中心建设目标</p>
+                	<p>中良塑料模壳有限公司服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a>定位及建设目标：包括区域城市现状及趋势分析、服务中心改造定位、服务中心建设目标</p>
                     <p>服务中心运营体系：包括服务中心平台架构、服务中心品牌体系两个方面</p>
                     <p>服务中心服务平台：包括基础硬件升级改造、服务平台落地、项目工作推进规划</p>
                 </div>
@@ -112,6 +112,6 @@
         </li>
     </ul>
 </div>
-<div class="bq">Copyright © 1998 - 2015   公司名称服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+<div class="bq">Copyright © 1998 - 2015   中良塑料模壳有限公司服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
 </body>
 </html>
