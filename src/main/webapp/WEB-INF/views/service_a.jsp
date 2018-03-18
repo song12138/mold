@@ -17,7 +17,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="中良塑料模壳有限公司"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/mold/company.png" alt="中良塑料模壳有限公司"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -112,6 +112,6 @@
         </li>
     </ul>
 </div>
-<div class="bq">Copyright © 1998 - 2015   中良塑料模壳有限公司服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+<div class="bq"> 中良塑料模壳有限公司 </div>
 </body>
 </html>

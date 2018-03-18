@@ -33,7 +33,7 @@ $(function(){
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="中良塑料模壳有限公司"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/mold/company.png" alt="中良塑料模壳有限公司"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -59,11 +59,11 @@ $(function(){
 <!--幻灯片-->
 <div id="banner" class="banner"> 
     <div id="owl-demo" class="owl-carousel"> 
-        <a class="item" target="_blank" href="##" >
-            <img src="${ctxStatic}/Assets/mold/banner2.jpg" height="500px" alt="">
+        <a class="item"  href="##" >
+            <img src="${ctxStatic}/Assets/mold/banner22.jpg" height="500px" alt="">
         </a>
-        <a class="item" target="_blank" href="##" >
-            <img src="${ctxStatic}/Assets/mold/banner3.jpg" height="500px" alt="">
+        <a class="item"  href="##" >
+            <img src="${ctxStatic}/Assets/mold/banner34.jpg" height="500px" alt="">
         </a>
     </div>
 </div>
@@ -81,10 +81,11 @@ $(function(){
     </div>
     <div class="about1 about ">
         <%--<img src="${ctxStatic}/Assets/upload/pic8.jpg" width="410" height="180" alt=""/>--%>
-        <br/>
-        <p style="clear:both; margin-top:20px;">中维建筑塑料模壳有限公司生产的中维牌塑料模壳，通过了国家建设及人防工程办公室检测认定 。</p>
-        <p>建筑塑料模壳建造的楼面合理，自重量轻，承受强度高，降低层高，款式新颖美观，节约建材效果显著，可节约钢材和混凝土20%～25%，降低总造价。特别适合大荷载建筑密肋楼板。如地下车库、超市、商场、车间。</p>
-        <p>中维建筑塑料模壳有限公司专业从事结构工程优化设计并致力于研究、开发和推广新型建筑材料，是一家专业研发、设计、制造、销售、售后服务为一体的建筑模壳公司。</p>
+        <p style="clear:both;">中良建筑塑料模壳有限公司生产的中良牌塑料模壳，通过了国家建设及人防工程办公室检测认定 。</p>
+        <p>建筑塑料模壳建造的楼面合理，自重量轻，承受强度高，降低层高，款式新颖美观，节约建材效果显著，</p>
+        <p> 可节约钢材和混凝土20%～25%，降低总造价。特别适合大荷载建筑密肋楼板。如地下车库、超市、商场、车间。</p>
+        <p>中良建筑塑料模壳有限公司专业从事结构工程优化设计并致力于研究、开发和推广新型建筑材料，</p>
+        <p> 是一家专业研发、设计、制造、销售、售后服务为一体的建筑模壳公司。</p>
     </div>
     <div class="about2 about" style="display: none;">
         <%--<img src="${ctxStatic}/Assets/mold/timg (1).jpg" width="410px" alt=""/>--%>
@@ -119,8 +120,8 @@ $(function(){
     </div>
     <div class="about3 about" style="display: none;">
         <br/>
-        <p>中良塑料模壳有限公司：XXXXXXXX</p>
-        <p>联系电话：XXXXXXXX</p>
+        <p>公司名称：中良塑料模壳有限公司</p>
+        <p>联系电话：宋经理 13285158853</p>
         <p>公司地址：XXXXXXXX</p>
     </div>
 </div>
@@ -269,7 +270,7 @@ $(function(){
         </li>
     </ul>
 </div>
-<div class="bq">Copyright © 1998 - 2015   中良塑料模壳有限公司服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+<div class="bq"> 中良塑料模壳有限公司 </div>
 </body>
 <script type="text/javascript">
     $(function () {

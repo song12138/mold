@@ -25,7 +25,7 @@
 <!--头部-->
 <div class="header">
     <div class="head clearfix">
-        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/images/logo.png" alt="中良塑料模壳有限公司"/></a></div>
+        <div class="logo"><a href="##"><img src="${ctxStatic}/Assets/mold/company.png" alt="中良塑料模壳有限公司"/></a></div>
         <div class="head_r clearfix">
         	<div class="search">
                 <input name="" type="text">
@@ -79,12 +79,12 @@
     <div class="join clearfix about1">
         <ul class="book">
             <li class="clearfix">
-                <p style="font-size: 22px">中良塑料模壳有限公司：</p>
-                    <p style="font-size: 22px">XXXXXXXXX</p>
+                <p style="font-size: 22px">公司名称：</p>
+                    <p style="font-size: 22px">中良塑料模壳有限公司</p>
             </li>
             <li class="clearfix">
                 <p style="font-size: 22px">联系方式：</p>
-                <p style="font-size: 22px">XXXXXXXXX</p>
+                <p style="font-size: 22px">宋经理 13285158853</p>
             </li>
             <li class="clearfix">
                 <p style="font-size: 22px">工厂位置：</p>
@@ -178,7 +178,7 @@
         </li>
     </ul>
 </div>
-<div class="bq">Copyright © 1998 - 2015   中良塑料模壳有限公司服务中心 更多模板：<a href="http://www.mycodes.net/" target="_blank">源码之家</a></div>
+<div class="bq"> 中良塑料模壳有限公司 </div>
 </body>
 <script type="text/javascript">
     $(function () {
